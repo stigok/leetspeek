@@ -1,7 +1,7 @@
 const es = require('event-stream')
 
-const source      = 'abeio'.split('')
-const translation = '48310'.split('')
+const source      = 'abegilos'.split('')
+const translation = '48361105'.split('')
 
 const replacers = source.map((char, index) => {
   return {
