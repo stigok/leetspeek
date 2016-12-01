@@ -1,4 +1,5 @@
 {
+  "version": "0.0.1",
   "scripts": {
     "test": "echo 'Hello, world! This is leetspeek :)' | node ./index.js"
   },
