@@ -3,6 +3,15 @@
 const es = require('event-stream')
 const leetspeek = require('../')
 
+const args = process.argv.splice(2)
+const str = args.join(' ').trim()
+
+// If args are supplied, translate them then exit
+if (str.length) {
+  console.log(leetspeek.translate(str))
+  process.exit(0)
+}
+
 process.stdin
   .pipe(es.split())
   .pipe(es.through(function (str) {
