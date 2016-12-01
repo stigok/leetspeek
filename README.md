@@ -12,3 +12,7 @@
     $: leetspeek foo, bar and baz friends folife
     # f00, 84r 4nd 84z fr13nd5 f011f3
 
+## License
+
+[CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
+
