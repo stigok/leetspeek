@@ -1,7 +1,7 @@
 {
   "version": "0.0.1",
   "scripts": {
-    "test": "echo 'Hello, world! This is leetspeek :)' | node ./index.js"
+    "test": "echo 'Hello, world! This is leetspeek w/o foobar :)' | node ./index.js"
   },
   "dependencies": {
     "event-stream": "^3.3.4"
