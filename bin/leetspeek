@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const es = require('event-stream')
+const leetspeek = require('../')
+
+process.stdin
+  .pipe(es.split())
+  .pipe(es.through(function (str) {
+    this.emit('data', leetspeek.translate(`${str}\n`))
+  }))
+  .pipe(process.stdout)
+    

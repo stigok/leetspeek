@@ -1,7 +1,10 @@
 {
   "version": "0.0.1",
+  "bin": {
+    "leetspeek": "./bin/leetspeek"
+  },
   "scripts": {
-    "test": "echo 'Hello, world! This is leetspeek w/o foobar :)' | node ./index.js"
+    "test": "echo 'Hello, world! This is leetspeek w/o foobar :)' | ./bin/leetspeek"
   },
   "dependencies": {
     "event-stream": "^3.3.4"

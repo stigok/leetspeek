@@ -10,14 +10,7 @@ const replacers = source.map((char, index) => {
   }
 })
 
-function translate(src) {
+module.exports.translate = function (src) {
   return replacers.reduce((str, r) => str.replace(r.regex, r.replacement), src)
 }
 
-process.stdin
-  .pipe(es.split())
-  .pipe(es.through(function (str) {
-    this.emit('data', translate(str))
-  }))
-  .pipe(process.stdout)
-    
