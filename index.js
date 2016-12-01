@@ -1,6 +1,4 @@
-const es = require('event-stream')
-
-const source      = 'abegilost'.split('')
+const source      = 'abegilost'.split('') // eslint-disable-line no-multi-spaces
 const translation = '483611057'.split('')
 
 const replacers = source.map((char, index) => {

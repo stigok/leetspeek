@@ -5,12 +5,15 @@
     "leetspeek": "./bin/leetspeek"
   },
   "scripts": {
-    "test": "echo 'Hello, world! This is leetspeek w/o foobar :)' | ./bin/leetspeek"
+    "test": "standard && echo 'No tests written :(' && exit 42"
   },
   "engines": {
     "node": ">=4.3.2"
   },
   "dependencies": {
     "event-stream": "^3.3.4"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
   }
 }
