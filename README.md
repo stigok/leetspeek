@@ -2,8 +2,13 @@
 
 > Reads text from stdin, writes leetspeek to stdout
 
-## Example
+> R34d5 73x7 fr0m 57d1n, wr1735 13375p33k 70 57d0u7
 
-    echo 'Hello, world! This is leetspeek w/o foobar' | node ./index.js
-    #     H3110, w0r1d! 7h15 15 13375p33k w/0 f0084r
+## TFM
+
+    $: npm i -g leetspeek
+    $: echo I am the leet haxor | leetspeek
+    # 1 4m 7h3 1337 h4x0r
+    $: leetspeek foo, bar and baz friends folife
+    # f00, 84r 4nd 84z fr13nd5 f011f3
 
