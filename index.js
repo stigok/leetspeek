@@ -1,6 +1,4 @@
-const es = require('event-stream')
-
-const source      = 'abegilost'.split('')
+const source      = 'abegilost'.split('') // eslint-disable-line no-multi-spaces
 const translation = '483611057'.split('')
 
 const replacers = source.map((char, index) => {
@@ -10,14 +8,7 @@ const replacers = source.map((char, index) => {
   }
 })
 
-function translate(src) {
+module.exports.translate = function (src) {
   return replacers.reduce((str, r) => str.replace(r.regex, r.replacement), src)
 }
 
-process.stdin
-  .pipe(es.split())
-  .pipe(es.through(function (str) {
-    this.emit('data', translate(str))
-  }))
-  .pipe(process.stdout)
-    
